@@ -1,4 +1,5 @@
-﻿using CBHelperDiscordBot.Models.BaseModels;
+﻿using System.IO;
+using CBHelperDiscordBot.Models.BaseModels;
 using Discord;
 using Discord.WebSocket;
 using Newtonsoft.Json;
@@ -11,7 +12,6 @@ namespace DiscordBot
 
         private DiscordSocketClient? _client;
         private readonly string? _path = $@"{Directory.GetParent(Environment.CurrentDirectory)?.Parent?.Parent?.FullName}\";
-
         public async Task MainAsync()
         {
             _client = new DiscordSocketClient();
