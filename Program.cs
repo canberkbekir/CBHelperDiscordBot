@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using CBHelperDiscordBot.Models.BaseModels;
 using Discord;
 using Discord.WebSocket;
 using Newtonsoft.Json;
@@ -36,5 +36,7 @@ namespace DiscordBot
             Console.WriteLine(msg.ToString());
             return Task.CompletedTask;
         }
+
+
     }
 }
